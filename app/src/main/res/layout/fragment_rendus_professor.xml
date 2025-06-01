@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="16dp">
+
+    <!-- Title bar -->
+    <TextView
+        android:id="@+id/tvRendusProfTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rendus (Professeur)"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#003366"
+        android:gravity="center"
+        android:paddingBottom="12dp" />
+
+    <!-- 1) Course selector -->
+    <TextView
+        android:id="@+id/tvSelectCourse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sélectionnez un cours :"
+        android:textSize="14sp"
+        android:paddingBottom="4dp" />
+
+    <Spinner
+        android:id="@+id/spinnerCoursesProf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp" />
+
+    <!-- 2) RecyclerView of assignments -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvAssignmentsProf"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:dividerHeight="1dp" />
+
+    <!-- Bottom nav‐bar placeholder -->
+    <FrameLayout
+        android:id="@+id/bottom_navigation_container"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_gravity="bottom" />
+</LinearLayout>

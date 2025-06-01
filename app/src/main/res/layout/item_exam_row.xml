@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="8dp"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true">
+
+    <!-- 1) Course Code -->
+    <TextView
+        android:id="@+id/tvItemCourse"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="HAI8171"
+        android:textSize="14sp"
+        android:textColor="#000000" />
+
+    <!-- 2) Date -->
+    <TextView
+        android:id="@+id/tvItemDate"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="15/06/25"
+        android:textSize="14sp"
+        android:textColor="#000000" />
+
+    <!-- 3) Start Time -->
+    <TextView
+        android:id="@+id/tvItemStart"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="09:00"
+        android:textSize="14sp"
+        android:textColor="#000000" />
+
+    <!-- 4) Duration (minutes) -->
+    <TextView
+        android:id="@+id/tvItemDuration"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="120"
+        android:textSize="14sp"
+        android:textColor="#000000" />
+
+    <!-- 5) Room -->
+    <TextView
+        android:id="@+id/tvItemRoom"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="Salle A"
+        android:textSize="14sp"
+        android:textColor="#000000" />
+
+    <!-- 6) Seat Number -->
+    <TextView
+        android:id="@+id/tvItemSeat"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="42"
+        android:textSize="14sp"
+        android:textColor="#000000" />
+</LinearLayout>

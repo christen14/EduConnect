@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- A simple “button‐like” row containing course title and deadline -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llSurveyButton"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_survey_button"
+    android:padding="12dp"
+    android:layout_margin="8dp">
+
+    <TextView
+        android:id="@+id/tvSurveyCourse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cours – Nom"
+        android:textSize="16sp"
+        android:textColor="#003366"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvSurveyDeadline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="se termine le : YYYY/MM/DD"
+        android:textSize="14sp"
+        android:textColor="#444444"
+        android:layout_marginTop="4dp"/>
+</LinearLayout>

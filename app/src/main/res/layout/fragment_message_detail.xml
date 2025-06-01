@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="16dp">
+
+    <!-- 1) Subject + Date row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvDetailSubject"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Sujet : …"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/tvDetailDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="24 Mai 2025 10:00"
+            android:textSize="12sp"
+            android:textColor="#666666"/>
+    </LinearLayout>
+
+    <!-- 2) From -->
+    <TextView
+        android:id="@+id/tvDetailFrom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Expéditeur : "
+        android:textSize="14sp"
+        android:textColor="#333333"
+        android:paddingTop="8dp"/>
+
+    <!-- 3) To -->
+    <TextView
+        android:id="@+id/tvDetailTo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="À : "
+        android:textSize="14sp"
+        android:textColor="#333333"
+        android:paddingBottom="16dp"/>
+
+    <!-- 4) Body -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tvDetailBody"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Corps du message…"
+            android:textSize="16sp"
+            android:textColor="#333333"/>
+    </ScrollView>
+
+    <!-- 5) Bottom nav bar -->
+    <FrameLayout
+        android:id="@+id/bottom_navigation_container"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"/>
+</LinearLayout>

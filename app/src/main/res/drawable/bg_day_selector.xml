@@ -1,0 +1,6 @@
+<!-- res/drawable/bg_week_selector.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="#1976d2"/>
+    <corners android:radius="20dp"/>
+</shape>

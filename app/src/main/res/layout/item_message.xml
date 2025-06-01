@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp"
+    android:background="?android:attr/selectableItemBackground">
+
+    <!-- 1) Per‐row checkbox -->
+    <CheckBox
+        android:id="@+id/cbMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!-- 2) Vertical container holding Subject+star on top row, Snippet below -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:paddingStart="8dp">
+
+        <!-- 2a) Top row: Subject (one line, ellipsized) + star icon -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Subject: only one line, ellipsize at end if too long -->
+            <TextView
+                android:id="@+id/tvSubject"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Sujet"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:maxLines="1"
+                android:ellipsize="end"/>
+
+            <!-- Star icon: visible only if message.important == true -->
+            <ImageView
+                android:id="@+id/ivImportant"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="4dp"
+                android:src="@android:drawable/star_off"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <!-- 2b) Snippet (up to two lines, ellipsized) -->
+        <TextView
+            android:id="@+id/tvSnippet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aperçu du message…"
+            android:textSize="14sp"
+            android:paddingTop="4dp"
+            android:maxLines="2"
+            android:ellipsize="end"/>
+    </LinearLayout>
+
+    <!-- 3) Date on the right -->
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="24 Mai 2025"
+        android:textSize="12sp"
+        android:textColor="#666666"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"/>
+
+    <!-- 4) Three‐dot overflow menu for per‐item actions -->
+    <ImageButton
+        android:id="@+id/btnMenu"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@android:drawable/ic_menu_more"
+        android:contentDescription="Menu"/>
+</LinearLayout>

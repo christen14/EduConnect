@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tvProfileTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Profil"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#003366"
+        android:padding="16dp"/>
+
+    <!-- Scrollable content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <!-- Email -->
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#555555"
+                android:paddingTop="4dp"/>
+
+            <!-- Divider -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#CCCCCC"
+                android:layout_marginVertical="16dp"/>
+
+            <!-- Combined Cours du semestre 1 / Cours du semestre 2 lines -->
+            <TextView
+                android:id="@+id/coursInscrits"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:paddingVertical="4dp"
+                android:text=""/>  <!-- Will be overwritten by code -->
+
+            <!-- Fixed “Année : 2024-2025” below -->
+            <TextView
+                android:id="@+id/tvAnnee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Année : 2024-2025"
+                android:textSize="16sp"
+                android:paddingVertical="4dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Sign out button in bottom-right corner of content area -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingEnd="16dp">
+
+        <Button
+            android:id="@+id/btnSignOut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Se déconnecter"
+            android:layout_gravity="end"/>
+    </FrameLayout>
+
+    <!-- Bottom nav bar -->
+    <FrameLayout
+        android:id="@+id/bottom_navigation_container"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"/>
+</LinearLayout>

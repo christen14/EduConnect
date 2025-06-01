@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="16dp">
+
+    <!-- Title: “Enquête pour <course>” -->
+    <TextView
+        android:id="@+id/tvDetailTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enquête pour …"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#003366"
+        android:gravity="center"/>
+
+    <!-- Scrollable area for questions -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingTop="12dp">
+
+        <LinearLayout
+            android:id="@+id/llQuestions"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </ScrollView>
+
+    <!-- Save button -->
+    <Button
+        android:id="@+id/btnSaveSurvey"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Enregistrer"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#1565C0"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- Bottom nav bar -->
+    <FrameLayout
+        android:id="@+id/bottom_navigation_container"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"/>
+</LinearLayout>

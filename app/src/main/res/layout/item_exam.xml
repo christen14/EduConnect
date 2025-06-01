@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true">
+
+    <!-- Course code (fixed width) -->
+    <TextView
+        android:id="@+id/tvCourse"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="HAI8171"
+        android:textSize="14sp"
+        android:textStyle="bold"/>
+
+    <!-- Date -->
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="15/04/25"
+        android:textSize="14sp"
+        android:gravity="center"/>
+
+    <!-- Start time -->
+    <TextView
+        android:id="@+id/tvStart"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="14:00"
+        android:textSize="14sp"
+        android:gravity="center"/>
+
+    <!-- Duration -->
+    <TextView
+        android:id="@+id/tvDuration"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="90 mns"
+        android:textSize="14sp"
+        android:gravity="center"/>
+
+    <!-- Room -->
+    <TextView
+        android:id="@+id/tvRoom"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="SC315"
+        android:textSize="14sp"
+        android:gravity="center"/>
+
+    <!-- Seat No. -->
+    <TextView
+        android:id="@+id/tvSeat"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="14"
+        android:textSize="14sp"
+        android:gravity="center"/>
+</LinearLayout>

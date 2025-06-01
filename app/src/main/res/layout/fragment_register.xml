@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:text="@string/creer_un_compte"
+            android:textSize="28sp"
+            android:textColor="#1565C0"
+            android:layout_marginTop="48dp"
+            android:layout_marginBottom="36dp"
+            android:fontFamily="serif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Email input -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="24dp">
+
+            <ImageView
+                android:src="@android:drawable/ic_dialog_email"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="8dp"
+                app:tint="#9E9E9E" />
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="Adresse Mail"
+                android:inputType="textEmailAddress"
+                android:textColorHint="#BDBDBD"
+                android:backgroundTint="#BDBDBD" />
+        </LinearLayout>
+
+        <!-- Password input 1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="24dp">
+
+            <ImageView
+                android:src="@android:drawable/ic_lock_lock"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="8dp"
+                app:tint="#9E9E9E" />
+
+            <EditText
+                android:id="@+id/etPassword1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="Mot de passe"
+                android:inputType="textPassword"
+                android:textColorHint="#BDBDBD"
+                android:backgroundTint="#BDBDBD"/>
+            <ImageView
+                android:id="@+id/ivTogglePassword1"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@android:drawable/ic_menu_view"
+                android:layout_marginStart="8dp"
+                android:clickable="true"
+                android:focusable="true"
+                app:tint="#9E9E9E" />
+        </LinearLayout>
+
+        <!-- Password input 2 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="24dp">
+
+            <ImageView
+                android:src="@android:drawable/ic_lock_lock"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="8dp"
+                app:tint="#9E9E9E" />
+
+            <EditText
+                android:id="@+id/etPassword2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="Confirmer mot de passe"
+                android:inputType="textPassword"
+                android:textColorHint="#BDBDBD"
+                android:backgroundTint="#BDBDBD"/>
+            <ImageView
+                android:id="@+id/ivTogglePassword2"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@android:drawable/ic_menu_view"
+                android:layout_marginStart="8dp"
+                android:clickable="true"
+                android:focusable="true"
+                app:tint="#9E9E9E" />
+        </LinearLayout>
+    <!-- Je suis un: Étudiant / Professeur -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Je suis :"
+            android:textSize="16sp"
+            android:paddingEnd="8dp"/>
+
+        <RadioGroup
+            android:id="@+id/rgRole"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbEtudiant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Étudiant"/>
+
+            <RadioButton
+                android:id="@+id/rbProfesseur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Professeur"
+                android:layout_marginStart="16dp"/>
+        </RadioGroup>
+    </LinearLayout>
+
+        <!-- Bouton création de compte -->
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="@string/creer_un_compte"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#1565C0"
+            android:layout_marginBottom="32dp" />
+
+        <!-- Texte retour connexion -->
+        <TextView
+            android:id="@+id/tvBackToLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Déjà un compte ? Connectez-vous"
+            android:textColor="#1565C0"
+            android:textSize="14sp"
+            android:clickable="true"
+            android:focusable="true" />
+
+    </LinearLayout>
+</ScrollView>

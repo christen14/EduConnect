@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">EduConnect</string>
+    <string name="creer_un_compte">Créer un compte</string>
+    <string name="adresse_mail">Adresse Mail</string>
+    <string name="mdp">Mot de passe</string>
+    <string name="champs_manquants">Veuillez remplir tous les champs</string>
+    <string name="message_envoye">Message envoyé</string>
+    <string name="non_connecte">Utilisateur non connecté</string>
+    <string name="diapos_cours">Diapos Cours</string>
+    <string name="tds_tps">TDs/TPs</string>
+    <string name="autres">Autres</string>
+    <string name="choisir_fichier">Veuillez d’abord choisir un fichier</string>
+    <string name="succes_televersement">Document téléversé avec succès</string>
+    <string name="aucun_fichier">Aucun fichier sélectionné</string>
+    <string name="echec_televersement">Échec du téléversement: "</string>
+    <string name="semestre_1">Semestre 1</string>
+    <string name="semestre_2">Semestre 2</string>
+    <string name="erreur_url">Impossible d\'obtenir l\'URL de téléchargement</string>
+    <string name="pas_dapplication">Aucune application pour ouvrir les fichiers PDF n\'est installée</string>
+    <string name="erreur_profil">Impossible de trouver votre profil.</string>
+    <string name="aucun_cours_enseigne">Vous n\'enseignez aucun cours</string>
+    <string name="soumis_le">Soumis le </string>
+    <string name="date_inconnue">Date inconnue</string>
+    <string name="email_invalide">Email utilisateur invalide</string>
+    <string name="chargement_convocations">Chargement des convocations…</string>
+    <string name="aucune_convocation">Aucune convocation trouvée</string>
+    <string name="convocation_examens">Convocations aux examens</string>
+    <string name="aucune_donnee">Aucune donnée à exporter</string>
+    <string name="cours">Cours</string>
+    <string name="date">Date</string>
+    <string name="debut">Début</string>
+    <string name="duree">Dureé</string>
+    <string name="salle">Salle</string>
+    <string name="num_place">N° place</string>
+    <string name="convocation_examens_suite">Convocations aux examens (suite)</string>
+    <string name="impossible_stockage">Impossible d\'accéder au stockage</string>
+    <string name="pdf_genere">PDF généré : </string>
+    <string name="erreur_pdf">Erreur lors de la création du PDF :  </string>
+
+
+
+</resources>

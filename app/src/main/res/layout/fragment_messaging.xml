@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/messaging_root"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <!-- 1) Title bar with “Compose” -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="16dp">
+
+        <TextView
+            android:id="@+id/tvMessagingTitle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Messagerie"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#003366" />
+
+        <ImageButton
+            android:id="@+id/btnCompose"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@android:drawable/ic_dialog_email"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Compose" />
+    </LinearLayout>
+
+    <!-- 2) Inbox header: checkbox, label, count, bulk buttons, and filter spinner -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="16dp">
+
+        <!-- “Select All” checkbox -->
+        <CheckBox
+            android:id="@+id/cbSelectAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!-- !!! Give the inbox‐label an ID so we can toggle it to “Envoyés” when needed -->
+        <TextView
+            android:id="@+id/tvInboxLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Boîte de réception"
+            android:textSize="16sp"
+            android:paddingStart="8dp"/>
+
+        <!-- Count of filtered messages (red) -->
+        <TextView
+            android:id="@+id/tvInboxCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#D32F2F"
+            android:paddingStart="4dp"/>
+
+        <!-- Bulk “Delete” button -->
+        <ImageButton
+            android:id="@+id/btnDeleteSelected"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="12dp"
+            android:src="@android:drawable/ic_menu_delete"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Supprimer sélection"/>
+
+        <!-- Bulk “Mark as Important” button -->
+        <ImageButton
+            android:id="@+id/btnImportantSelected"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="8dp"
+            android:src="@android:drawable/star_off"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Marquer comme important"/>
+
+        <!-- Spacer so spinner is pushed to the right -->
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="1dp"/>
+
+        <!-- Filter spinner (Tous / Importants / Non lus / Lus / Envoyés) -->
+        <Spinner
+            android:id="@+id/spinnerFilters"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/filter_options"
+            android:spinnerMode="dropdown"/>
+    </LinearLayout>
+
+    <!-- 3) RecyclerView of messages -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvMessages"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <!-- 4) Bottom nav bar placeholder -->
+    <FrameLayout
+        android:id="@+id/bottom_navigation_container"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"/>
+</LinearLayout>

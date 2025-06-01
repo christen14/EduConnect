@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp">
+
+    <!-- Title (bold) with no extra font padding. Use margin for spacing. -->
+    <TextView
+        android:id="@+id/tvPostTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Title of post"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:includeFontPadding="false"
+        android:layout_marginBottom="4dp" />
+
+    <!-- Snippet / content (one or two lines), also no extra font padding -->
+    <TextView
+        android:id="@+id/tvPostSnippet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Content of post"
+        android:textColor="#333333"
+        android:textSize="14sp"
+        android:includeFontPadding="false"
+        android:layout_marginBottom="4dp" />
+
+    <!-- Date (smaller, lighter color), likewise no extra font padding -->
+    <TextView
+        android:id="@+id/tvPostDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="XX/XX/XX XX:XX"
+        android:textColor="#666666"
+        android:textSize="12sp"
+        android:includeFontPadding="false" />
+</LinearLayout>

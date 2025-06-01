@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rendus_root"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <!-- 1) Title Bar -->
+    <TextView
+        android:id="@+id/tvRendusTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rendus"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="16dp"
+        android:textColor="#003366"/>
+
+    <!-- 2) ExpandableListView for courses → assignments -->
+    <ExpandableListView
+        android:id="@+id/elvRendus"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:groupIndicator="@null"
+        android:dividerHeight="1dp"/>
+
+    <!-- 3) Bottom nav bar -->
+    <FrameLayout
+        android:id="@+id/bottom_navigation_container"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"/>
+</LinearLayout>

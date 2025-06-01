@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="16dp">
+
+    <!-- Title bar -->
+    <TextView
+        android:id="@+id/tvUploadTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gérer les documents de cours"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#1976D2"
+        android:paddingBottom="12dp"/>
+
+    <!-- Course selector label -->
+    <TextView
+        android:id="@+id/tvSelectCourseLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sélectionnez un cours :"
+        android:textSize="14sp"
+        android:layout_below="@id/tvUploadTitle"
+        android:paddingBottom="4dp"/>
+
+    <!-- Spinner for professor’s courses -->
+    <Spinner
+        android:id="@+id/spinnerCourses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvSelectCourseLabel"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Folder selector label -->
+    <TextView
+        android:id="@+id/tvSelectFolderLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choisissez la catégorie :"
+        android:textSize="14sp"
+        android:layout_below="@id/spinnerCourses"
+        android:paddingBottom="4dp"/>
+
+    <!-- Spinner for folder categories -->
+    <Spinner
+        android:id="@+id/spinnerFolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvSelectFolderLabel"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Choose file button -->
+    <Button
+        android:id="@+id/btnChooseFile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choisir un fichier"
+        android:layout_below="@id/spinnerFolder"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Selected file name -->
+    <TextView
+        android:id="@+id/tvChosenFile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Aucun fichier sélectionné"
+        android:textSize="14sp"
+        android:textColor="#333333"
+        android:layout_below="@id/btnChooseFile"
+        android:paddingBottom="12dp"/>
+
+    <!-- Upload button -->
+    <Button
+        android:id="@+id/btnUploadFile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Téléverser"
+        android:layout_below="@id/tvChosenFile" />
+
+    <!-- Bottom nav‐bar placeholder -->
+    <FrameLayout
+        android:id="@+id/bottom_navigation_container"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

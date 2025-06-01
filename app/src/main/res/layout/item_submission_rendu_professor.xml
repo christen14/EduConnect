@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:padding="12dp"
+    android:layout_marginBottom="4dp">
+
+    <!-- 1) Student identifier -->
+    <TextView
+        android:id="@+id/tvStudentIdProf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="student1@gmail.com"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="#333333" />
+
+    <!-- 2) Download link (styled as link) -->
+    <TextView
+        android:id="@+id/tvDownloadLinkProf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Télécharger le rendu"
+        android:textSize="14sp"
+        android:textColor="#1976D2"
+        android:paddingTop="4dp" />
+
+    <!-- 3) Grade or “Noter” button -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tvGradeProf"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Note : 15"
+            android:textSize="14sp"
+            android:textColor="#333333"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnGradeProf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Noter"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:textColor="#1976D2"
+            android:visibility="gone" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 1) Horizontal panel: side‐panel (courses) + main content (posts) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <!-- Side panel: list of courses -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvCoursesSide"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:background="#EEEEEE"/>
+
+        <!-- Divider -->
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#CCCCCC"/>
+
+        <!-- Main content: title + selected course + create‐button + posts list -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tvForumTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Forum"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#003366"/>
+
+            <TextView
+                android:id="@+id/tvForumCourse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cours : "
+                android:textSize="14sp"
+                android:paddingBottom="8dp"/>
+
+            <!-- Create Post Button -->
+            <Button
+                android:id="@+id/btnCreatePost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nouveau post"
+                android:layout_marginBottom="12dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvPosts"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 2) Bottom nav‐bar container pinned to bottom -->
+    <FrameLayout
+        android:id="@+id/bottom_navigation_container"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"/>
+</LinearLayout>

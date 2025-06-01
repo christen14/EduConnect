@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tvDocsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Documents"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#003366"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="12dp"/>
+
+    <!-- Subtitle showing the selected course -->
+    <TextView
+        android:id="@+id/tvDocsCourse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cours: …"
+        android:textSize="16sp"
+        android:textColor="#555555"
+        android:paddingBottom="16dp"/>
+
+    <!-- Expandable list of document groups -->
+    <ExpandableListView
+        android:id="@+id/elvDocs"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:groupIndicator="@null"
+        android:dividerHeight="1dp"/>
+
+    <!-- Bottom nav placeholder (attach NavBarFragment here) -->
+    <FrameLayout
+        android:id="@+id/bottom_navigation_container"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"/>
+</LinearLayout>

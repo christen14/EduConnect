@@ -1,0 +1,41 @@
+<!-- res/layout/fragment_bottom_navigation_bar.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:background="#1565C0"
+    android:gravity="center"
+    android:padding="8dp">
+
+    <!-- Back Icon -->
+    <ImageView
+        android:id="@+id/navBack"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/ic_arrow_back"
+        android:layout_marginHorizontal="52dp"
+        app:tint="#FFFFFF" />
+
+
+    <!-- Dashboard Icon -->
+    <ImageView
+        android:id="@+id/navDashboard"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@android:drawable/ic_dialog_map"
+        android:layout_marginHorizontal="52dp"
+        app:tint="#FFFFFF" />
+
+    <!-- Profile Icon -->
+    <ImageView
+        android:id="@+id/navProfile"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="@drawable/circle_bg"
+        android:src="@drawable/ic_profile"
+        android:layout_marginHorizontal="52dp"
+        app:tint="#FFFFFF" />
+
+
+</LinearLayout>

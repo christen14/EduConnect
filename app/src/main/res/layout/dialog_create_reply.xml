@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvReplyLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Votre réponse"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:paddingBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/etReplyContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Écrivez votre réponse ici…"
+        android:inputType="textMultiLine"
+        android:minLines="3"/>
+</LinearLayout>

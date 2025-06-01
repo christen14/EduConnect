@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F0F0F0"
+    android:padding="12dp"
+    android:layout_marginBottom="8dp">
+
+    <!-- 1) Assignment header -->
+    <TextView
+        android:id="@+id/tvAssignmentTitleProf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TP 1 – Mobile Programming"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#333333" />
+
+    <TextView
+        android:id="@+id/tvAssignmentDueProf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fin : 05/05/2025 23:59"
+        android:textSize="14sp"
+        android:textColor="#555555"
+        android:paddingTop="4dp" />
+
+    <!-- 2) Button to expand submissions -->
+    <Button
+        android:id="@+id/btnToggleSubsProf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Voir soumissions"
+        android:layout_marginTop="8dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:textColor="#1976D2"
+        android:textAllCaps="false" />
+
+    <!-- 3) Nested RecyclerView (initially GONE) for submissions -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvSubmissionsProf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:dividerHeight="1dp"
+        android:nestedScrollingEnabled="false"
+        android:paddingTop="8dp"/>
+</LinearLayout>

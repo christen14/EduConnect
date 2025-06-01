@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#FFFFFF">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Toolbar / Title -->
+            <TextView
+                android:id="@+id/tvComposeTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingBottom="16dp"
+                android:text="Nouveau message"
+                android:textColor="#003366"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <!-- To: -->
+            <EditText
+                android:id="@+id/etTo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:background="@android:drawable/edit_text"
+                android:hint="À : "
+                android:inputType="textEmailAddress"
+                android:padding="8dp" />
+
+            <!-- Subject -->
+            <EditText
+                android:id="@+id/etSubject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:background="@android:drawable/edit_text"
+                android:hint="Objet"
+                android:inputType="text"
+                android:padding="8dp" />
+
+            <!-- Body -->
+            <EditText
+                android:id="@+id/etBody"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@android:drawable/edit_text"
+                android:gravity="top"
+                android:hint="Rédigez votre message ici…"
+                android:inputType="textMultiLine"
+                android:padding="8dp" />
+
+            <!-- Send button -->
+            <Button
+                android:id="@+id/btnSend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Envoyer" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Bottom nav bar -->
+    <FrameLayout
+        android:id="@+id/bottom_navigation_container"
+        android:layout_width="match_parent"
+        android:layout_height="56dp" />
+</LinearLayout>
